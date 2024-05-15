@@ -172,7 +172,7 @@ Gobuster gets a hit on a PDF file! In my background directory fuzzes I'll typica
 
 #### Account signup and SQLi attempt
 
-![Example Image](images/acount-signup.png)
+![Example Image](images/account-signup.png)
 
 Ok, so it looks like we can get an account by posting to the contact form.
 
