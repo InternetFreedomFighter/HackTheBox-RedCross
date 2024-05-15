@@ -146,7 +146,7 @@ Theres quite a bit to look at here, we see the same "?page=login" parameter. I a
 
 #### https://intra.redcross.htb FUZZ two
 
-If my initial directory enumeration doesnt find much, I'll run annother one in the background with a bigger wordlist. This time I ended up getting an additional hit.
+If my initial directory enumeration doesnt find much, I'll run another one in the background with a bigger wordlist. This time I ended up getting an additional hit.
 
 ```bash
 /.php                 (Status: 403) [Size: 284]
@@ -295,7 +295,7 @@ users                   [Status: 302, Size: 363, Words: 18, Lines: 1, Duration: 
 cpanel                  [Status: 302, Size: 363, Words: 18, Lines: 1, Duration: 76ms]
 ```
 
-Two hits: users and cpanel. I filteres status code 200 because real pages were returning 302.
+Two hits: users and cpanel. I filtered status code 200 because real pages were returning 302.
 
 From here I figured that 'cpanel' looked the most promising. I intercepted the request to "https://admin.redcross.htb/?page=cpanel" and replaced the cookie with: "PHPSESSID=4t1c9gs1ja972muc6dcovo7ic4; LANG=EN_US; SINCE=1715759235; LIMIT=10; DOMAIN=admin"
 
